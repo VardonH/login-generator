@@ -9,12 +9,12 @@ public class LoginGeneratorTest {
     private LoginGenerator logGen;
     private LoginService logServ;
 
+
     @Before
     public void setUp() throws Exception {
-        final String [] c = new String[3];
+        final String [] c = new String[2];
         c[0] = "PDUP";
         c[1] = "VHUG";
-        c[2] = "TAGA";
         logServ = new LoginService(c);
         logGen = new LoginGenerator(logServ);
 
